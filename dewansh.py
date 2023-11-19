@@ -75,6 +75,11 @@ def main():
         address.place(x=610, y=370)
         addrs_entry = Entry(base, width=15, font=("Arial 15 bold"))
         addrs_entry.place(x=610, y=410)
+        
+        work_place = Label(base, text="Work Place/College", font=("Arial 15 bold"), bg="silver", fg="black")
+        work_place.place(x=610, y=450)
+        place_entry = Entry(base, width="15", font=("Arial 15 bold"))
+        place_entry.place(x=610, y=490)
 
         vehicle = Label(base, text="Vehicle No.", font=("Arial 15 bold"), bg="silver", fg="black")
         vehicle.place(x=400, y=450)
@@ -82,16 +87,14 @@ def main():
         vehicle_entry.place(x=400, y=490)
         m2 = Label(base, text="(MH20EU9295)", font=("Arial 11 bold"), bg="silver", fg="black")
         m2.place(x=470, y=450)
-
-        work_place = Label(base, text="Work Place/College", font=("Arial 15 bold"), bg="silver", fg="black")
-        work_place.place(x=610, y=450)
-        place_entry = Entry(base, width="15", font=("Arial 15 bold"))
-        place_entry.place(x=610, y=490)
-
-
+       
         gender = Label(base, text="Gender", font=("Arial 15 bold"), bg="silver", fg="black")
         gender.place(x=400, y=580)
         G = 1
+       
+
+
+       
         def selected():
             global G
             if c1.get() == 1:
